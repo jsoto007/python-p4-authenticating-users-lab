@@ -9,6 +9,8 @@ from models import db, Article, User
 
 fake = Faker()
 
+print("...Seeding")
+
 with app.app_context():
 
     print("Deleting all records...")
@@ -53,3 +55,5 @@ with app.app_context():
     
     db.session.commit()
     print("Complete.")
+
+print("Done seeding ✅✅✅")
