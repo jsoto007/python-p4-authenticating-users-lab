@@ -47,6 +47,8 @@ class ShowArticle(Resource):
             return make_response(article_json, 200)
 
         return {'message': 'Maximum pageview limit reached'}, 401
+    
+
 
 api.add_resource(ClearSession, '/clear')
 api.add_resource(IndexArticle, '/articles')
